@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Library.css">
+    <script src="Library.js" defer></script>
+</head>
+<h1>Welcome to the Library!</h1>
+<h2>A place to store all of the book info you need!</h2>
+<img src="Library.jpeg">
+<hr>
+<body>
+    <div id="newBook">
+        <button id= addBook>+ Add a new Book</button>
+    </div>
+    <h1>The Current Collection</h1>
+    <div id="BookLibrary"></div>
+
+<!--Modal Pop-up Section-->
+<div class="bookForm">
+    <div class="formContent">
+        <div class="close">+</div>
+        <img class="form-img" src="Book.png">
+        <form action="">
+            <input type="text" id="bookTitle" placeholder="Book Title">
+            <input type="text" id="bookAuthor" placeholder="Book Author">
+            <input type="text" id="pages" placeholder="# of pages">
+            <button id="submitBook">Submit Book</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
