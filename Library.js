@@ -5,14 +5,12 @@ let newP = document.createElement('p');
 let tSubmit = document.getElementById("bookTitle");
 let aSubmit = document.getElementById('bookAuthor');
 let pSubmit = document.getElementById('pages');
-let rSubmit = document.getElementById('read');
 
 class Book {
     constructor(title, author, pages) {
         this.title = title
         this.author = author
         this.pages = pages
-        this.read = read
         this.info = function() {
             console.log(title, author, pages);
         }
@@ -50,6 +48,7 @@ class UI {
 
         list.appendChild(card);
     }
+
     static deleteBook(elem) {
         if(elem.classList.contains('remove')){
             elem.parentElement.parentElement.remove();
